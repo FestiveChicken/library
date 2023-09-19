@@ -1,4 +1,4 @@
-const myLibrary = ['book1', 'book2','book3']
+const myLibrary = []
 const showButton = document.getElementById('showDialog')
 const addNewBook = document.getElementById('addNewBook')
 const outputBox = document.querySelector("output")
@@ -16,9 +16,17 @@ function Book(title, author, pages, read) {
 }
 
 //Adds book title to array
-function addBookToLibrary () {
-    myLibrary.push(this)
+function addBookToLibrary (title, author, pages, read) {
+    let NewBookTitle = title
+    title = new Book(title, author, pages, read)
+    myLibrary.push(title)
 }
+
+//Placeholder for cards
+addBookToLibrary('The Atlantic','Moby Dick',3,false)
+addBookToLibrary('The Atlantic','Moby Dick',3,false)
+addBookToLibrary('The Atlantic','Moby Dick',3,false)
+addBookToLibrary('The Atlantic','Moby Dick',3,false)
 
 //Creates Card for each book
 for (i = 0; i < myLibrary.length; i++) {
@@ -27,7 +35,7 @@ for (i = 0; i < myLibrary.length; i++) {
     divCard.style.padding = '10px'
     divCard.style.margin = '10px'
     divCard.style.backgroundColor = 'grey'
-    divCard.textContent = myLibrary[i]
+    divCard.textContent = myLibrary[i].title + "\n" + myLibrary[i].author + "\n" + myLibrary[i].pages + "\n" + myLibrary[i].read
     div.appendChild(divCard)
 }
 
