@@ -6,23 +6,19 @@
     <title>Library</title>
 </head>
 <body>
-    <div id="cards">
+    <div id="cardHolder">
 
     </div>
     <dialog id ="addNewBook">
-        <form>
-            <label for="book">Book Name: </label>
-            <input type="text" name="book" id="book">
+        <form id="formInfo">
+            <label for="title">Book Name: </label>
+            <input type="text" name="title" id="title" required>
             <label for="author">Author Name: </label>
-            <input type="text" name="author" id="author">
+            <input type="text" name="author" id="author" required>
             <label for="pages">Pages: </label>
-            <input type="number" name="pages" id="pages"><br>
-            <label for="read">Read</label>
-            <input type="checkbox" name="read" id="read">
-            <label for="notRead">Did Not Read</label>
-            <input type="checkbox" name="notRead" id="notRead"><br>
-            <button value="cancel" formmethod="dialog">Cancel</button>
-            <button id="confirmButton" value="default">Confirm</button>
+            <input type="number" name="pages" id="pages" required><br>
+            <button id="cancel" type="button">Cancel</button>
+            <button type="submit">Submit</button>
         </form>  
     </dialog>
     <button id="showDialog">New Book</button>
