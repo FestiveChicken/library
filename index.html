@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500&display=swap');
+    </style>
 </head>
 <body>
+    <div id="header">
+        <h1 id="headerTitle">Library</h1>
+        <button id="signInButton">Log In</button>
+    </div>
     <div id="cardHolder">
-
+        <button id="showDialog" class="card" >New Book <img src="images/plus-circle-1425-svgrepo-com.svg" alt="plus"></button>
     </div>
     <dialog id ="addNewBook">
         <form id="formInfo">
@@ -21,7 +29,6 @@
             <button type="submit">Submit</button>
         </form>  
     </dialog>
-    <button id="showDialog">New Book</button>
     <output></output>
     <script src="script.js"></script>
 </body>

@@ -1,7 +1,6 @@
 const myLibrary = []
 const showButton = document.getElementById('showDialog')
 const addNewBook = document.getElementById('addNewBook')
-const outputBox = document.querySelector("output")
 const formInfo = document.getElementById('formInfo')
 const cancelButton = document.getElementById('cancel')
 
@@ -26,28 +25,41 @@ function createCard() {
     let cardHolder = document.getElementById('cardHolder')
     let card = document.createElement('div')
     card.setAttribute('class', 'card')
-    card.style.backgroundColor = 'grey'
-    card.style.margin = '10px'
-    card.style.padding = '10px'
+    card.setAttribute('id',[i])
+    card.style.display = 'flex'
+    card.style.flexDirection = 'column'
+    card.style.justifyContent = 'space-between'
+    card.style.alignItems = 'center'
+    card.style.backgroundColor = '#00ADB5'
     cardHolder.appendChild(card)
 
     //Card Content
-    let cardContent = document.createElement('p')
-    cardContent.textContent = myLibrary[i].title + "\n" + myLibrary[i].author + "\n" + myLibrary[i].pages + "\n"
-    card.appendChild(cardContent)
+    let title = document.createElement('p')
+    let author = document.createElement('p')
+    let pages = document.createElement('p')
+    title.textContent = 'Title: ' + myLibrary[i].title
+    card.appendChild(title)
+    author.textContent = 'Author: ' + myLibrary[i].author 
+    card.appendChild(author)
+    pages.textContent = 'Pages: ' + myLibrary[i].pages
+    card.appendChild(pages)
 
-    //Remove Button
+    //Adds Remove Button
     let removeButton = document.createElement('button')
-    removeButton.setAttribute('id',[i])
+    removeButton.style.borderRadius = '20px'
+    removeButton.style.backgroundColor = '#EEEEEE'
+    removeButton.style.border = 'solid'
+    removeButton.style.borderColor = '#EEEEEE'
     removeButton.textContent = 'Remove'
     card.appendChild(removeButton)
 
-
-    //Read Button
+    //Adds Read Button
     let readButton = document.createElement('button')
-    readButton.textContent = 'Unread'
+    readButton.textContent = 'Not Read'
     readButton.style.backgroundColor = 'red'
-    readButton.style.marginLeft = '10px'
+    readButton.style.borderRadius = '20px'
+    readButton.style.border = 'solid'
+    readButton.style.borderColor = '#EEEEEE'
     card.appendChild(readButton)
 
     //Removes Card
@@ -58,23 +70,19 @@ function createCard() {
 
     //Changes read status for book
     readButton.addEventListener('click', () => {
-        let idNumber = removeButton.getAttribute('id')
-        console.log(idNumber)
+        let idNumber = card.getAttribute('id')
         if (myLibrary[idNumber].read == false) {
             myLibrary[idNumber].read = true
             readButton.textContent = 'Read'
             readButton.style.backgroundColor = 'green'
-            console.log(myLibrary)
         }
         else if (myLibrary[idNumber].read == true) {
             myLibrary[idNumber].read = false
             readButton.style.backgroundColor = 'red'
-            readButton.textContent = 'Unread'
-            console.log(myLibrary)
+            readButton.textContent = 'Not Read'
         }
     }
     )
-
     i++
 }
 
