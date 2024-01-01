@@ -18,4 +18,5 @@ To use the following project is extremely simple.
 
 3. And you are done! Additionally if you want to change the read status of a book you can simply click on the Read/Unread   
    Button, or if you need to remove the book simply click on remove
+   
 ![image](https://github.com/FestiveChicken/library/assets/44416957/0c0880f5-5f26-46d9-aa8d-584813273d4d)
