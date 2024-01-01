@@ -16,7 +16,6 @@ To use the following project is extremely simple.
 
 ![image](https://github.com/FestiveChicken/library/assets/44416957/d594d904-d6a9-4a03-9cee-4a7669bec1d3)
 
-3. And you are done! Additionally if you want to change the read status of a book you can simply click on the Read/Unread   
-   Button, or if you need to remove the book simply click on remove
+3. And you are done! Additionally if you want to change the read status of a book you can simply click on the Read/Unread Button, or if you need to remove the book simply click on remove
    
 ![image](https://github.com/FestiveChicken/library/assets/44416957/0c0880f5-5f26-46d9-aa8d-584813273d4d)
