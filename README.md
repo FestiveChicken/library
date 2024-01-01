@@ -1,7 +1,7 @@
 # Library App
 
 # Description
-This project uses constructors/classes to create objects and was primarily done to increase my abilities and comfortability with classes. Using the CRUD method, a user can take different books and add them including the author, the number of pages as well as whether or not the book has been read. Additionally, this was my first projects where a form was used to gather input values. One of the biggest challanges faced was understanding the concept behind classes as they were not intuitive at first for me.
+This project uses constructors/classes to create objects and was primarily done to increase my abilities and comfortability with classes. Using the CRUD method, a user can take different books and add them including the author, the number of pages as well as whether or not the book has been read. Additionally, this was my first projects where a form was used to gather input values. One of the biggest challenges faced was understanding the concept behind classes as they were not intuitive at first for me.
 
 # Live Project
 The project is live and can be accessed [here](https://festivechicken.github.io/library/)
