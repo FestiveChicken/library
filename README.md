@@ -1,21 +1,34 @@
-# Library App
+# 📚 Library App
 
-# Description
-This project uses constructors/classes to create objects and was primarily done to increase my abilities and comfortability with classes. Using the CRUD method, a user can take different books and add them including the author, the number of pages as well as whether or not the book has been read. Additionally, this was my first projects where a form was used to gather input values. One of the biggest challenges faced was understanding the concept behind classes as they were not intuitive at first for me.
+A small client‑side library manager that lets you add, display, remove, and toggle the “read” status of books. Built to practice JavaScript constructors, prototype methods, and dynamic DOM rendering without any backend.
 
-# Live Project
-The project is live and can be accessed [here](https://festivechicken.github.io/library/)
+## 🔗 Live Demo  
+[View the live demo](https://festivechicken.github.io/library/)  
 
-# How to Use the Project
-To use the following project is extremely simple.
-1. Just click on the box that says New Book
+## 🛠️ Features
+- **Add New Book** via a form (title, author, pages, read status)  
+- **Display Books** dynamically as cards on the page  
+- **Remove Book** with a single click  
+- **Toggle Read Status** on each book card  
+- **Unique IDs** generated with `crypto.randomUUID()`  
+- Clean separation of **data** (book objects) and **rendering** logic  
 
-![image](https://github.com/FestiveChicken/library/assets/44416957/810b90a7-6744-4186-84b9-844727c8c076)
+## 🧠 What I Learned
+- Creating JavaScript **constructors** and **prototype methods**  
+- Generating **unique IDs** with `crypto.randomUUID()`  
+- **Preventing default** form submission with `event.preventDefault()`  
+- **Data‑driven rendering**: looping through an array to build the UI  
+- Managing **event listeners** for dynamic elements  
+- Using **data attributes** to link DOM elements to underlying data  
 
-2. Fill out whatever information you have to enter
+## 📚 Assignment Summary
+This project was part of The Odin Project’s JavaScript curriculum. The goals were to:
+1. Set up a `Book` constructor and `addBookToLibrary()` function to store book objects in an array.  
+2. Loop through the array to **render** each book as a card or table entry.  
+3. Implement a **modal/form** for creating new books.  
+4. Use `event.preventDefault()` to handle form submissions client‑side.  
+5. Add **remove** and **toggle read** buttons on each book card, using `data-id` attributes to identify the book.  
 
-![image](https://github.com/FestiveChicken/library/assets/44416957/d594d904-d6a9-4a03-9cee-4a7669bec1d3)
+---
 
-3. And you are done! Additionally if you want to change the read status of a book you can simply click on the Read/Unread Button, or if you need to remove the book simply click on remove
-   
-![image](https://github.com/FestiveChicken/library/assets/44416957/0c0880f5-5f26-46d9-aa8d-584813273d4d)
+Built with ❤️ by [FestiveChicken](https://github.com/FestiveChicken)
