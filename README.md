@@ -10,12 +10,10 @@ A small client‑side library manager that lets you add, display, remove, and to
 - **Display Books** dynamically as cards on the page  
 - **Remove Book** with a single click  
 - **Toggle Read Status** on each book card  
-- **Unique IDs** generated with `crypto.randomUUID()`  
 - Clean separation of **data** (book objects) and **rendering** logic  
 
 ## 🧠 What I Learned
 - Creating JavaScript **constructors** and **prototype methods**  
-- Generating **unique IDs** with `crypto.randomUUID()`  
 - **Preventing default** form submission with `event.preventDefault()`  
 - **Data‑driven rendering**: looping through an array to build the UI  
 - Managing **event listeners** for dynamic elements  
